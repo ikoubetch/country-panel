@@ -1,5 +1,4 @@
-import React from 'react'
-import { useContext } from 'react/cjs/react.development'
+import React, { useContext } from 'react'
 import DataContext from '../../../hooks/dataContext'
 import SelectField from '../../atoms/SelectField'
 import TextField from '../../atoms/TextField'

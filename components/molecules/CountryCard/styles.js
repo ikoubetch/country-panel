@@ -22,12 +22,4 @@ export const InfoContainer = styled.div`
   span {
     margin-bottom: 15px;
   }
-
-  div {
-    margin-top: 2px;
-
-    span {
-      font-weight: 600;
-    }
-  }
 `

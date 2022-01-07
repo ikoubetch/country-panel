@@ -20,6 +20,7 @@ export default function Home() {
       setCountries(res.data)
       setRegionOptions([...new Set(res.data.map((contry) => contry.region))])
     }
+
     const getByRegion = async () => {
       const res = await getAllCountriesByRegion(regionSelected)
 
@@ -29,6 +30,7 @@ export default function Home() {
     if (regionSelected === '') getAll()
     else getByRegion()
   }, [regionSelected, setRegionOptions])
+
   return (
     <>
       <FilterOptions />

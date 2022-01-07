@@ -4,7 +4,7 @@ import Title from '../../atoms/Title'
 
 import { FaMoon, FaRegMoon } from 'react-icons/fa'
 
-import { Container, Icon } from './styles'
+import { Container } from './styles'
 
 function Header({ theme, onClickSwitchMode }) {
   const options = {
@@ -21,7 +21,7 @@ function Header({ theme, onClickSwitchMode }) {
     <Container>
       <Title>Where in the world?</Title>
       <Button transparent onClick={onClickSwitchMode}>
-        <Icon>{options[theme].icon}</Icon>
+        {options[theme].icon}
         {options[theme].label}
       </Button>
     </Container>

@@ -9,6 +9,3 @@ export const Container = styled.header`
     ${(props) => (props.theme.title === 'dark' ? '#172028' : 'gray')};
   justify-content: space-between;
 `
-export const Icon = styled.span`
-  padding-right: 7px;
-`
